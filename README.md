@@ -35,14 +35,18 @@ The interpreter is started by calling (lambda-frontend).
 
 Some example executions are found below:
 
+
 ? (fact 3)
+
 (LAM (F) (LAM (X) (F (F (F (F (F (F X))))))))
 
 ? (fact 2)
+
 (LAM (F) (LAM (X) (F (F X))))
 
 ? (+ 1 1)
 (LAM (F X) (F ((LAM (F X) (F X)) F X)))
 
 ? (+ 2 2)
+
 (LAM (F X) (F (F ((LAM (F X) (F (F X))) F X))))
